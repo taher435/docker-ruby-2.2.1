@@ -9,7 +9,7 @@ RUN \
   apt-get update && \
   apt-get install -y ruby ruby-dev ruby-bundler git nodejs software-properties-common \
   autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev \
-  libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libpq-dev wget
+  libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libpq-dev wget tzdata
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
